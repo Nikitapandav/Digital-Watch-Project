@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: lightcyan;
+}
+
+.watch {
+  perspective: 800px;
+}
+
+.display {
+  display: inline-block;
+  font-family: cursive, sans-serif;
+  font-size: 3em;
+  color: red;
+  padding: 10px 20px;
+  background-color: #333333;
+  border-radius: 5px;
+  transform-style: preserve-3d;
+  animation: rotateAnimation 60s linear infinite;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
